@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+#contact {
+    margin-bottom: 20px; /* Espace entre le formulaire et le footer */
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Pour s'assurer que tout est bien aligné */
+}
+
+
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        footer {
+            margin-top: auto;
+        }
+
+    .section {
+    margin-bottom: 10px;
+        }
+
+
+        header {
+            background: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        nav {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto; /* Centre la section horizontalement */
+        }
+
+
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .portfolio-item {
+            flex: 1 1 calc(33.333% - 20px);
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .portfolio-item h3 {
+            padding: 10px;
+            font-size: 1.5rem;
+        }
+
+        .portfolio-item p {
+            padding: 0 10px 10px;
+            font-size: 1rem;
+        }
+
+        .portfolio-item img {
+    width: 100%; /* Assure que l'image occupe toute la largeur de son conteneur */
+    height: 200px; /* Fixe une hauteur identique pour toutes les images */
+    object-fit: cover; /* Coupe l'image pour qu'elle s'adapte parfaitement */
+    display: block; /* Évite les marges indésirables */
+}
+
+#contact {
+    text-align: center;
+    max-width: 600px; /* Ajuste la largeur pour une mise en page propre */
+    margin: 0 auto; /* Centre horizontalement la section */
+    padding: 20px;
+    background-color: #f9f9f9; /* Couleur de fond claire pour se démarquer */
+    border: 1px solid #ddd; /* Bordure discrète */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre pour un effet surélevé */
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacement entre les champs */
+}
+
+#contact .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#contact label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#contact input,
+#contact textarea,
+#contact button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#contact button {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: #555;
+}
+
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <p>Explore my work and projects</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>Hello, my name is Jean-Jules AMELA, i'm a UX/UI designer passionate about creating intuitive and elegant user experiences. My approach focuses on simplicity and efficiency, integrating user-centered design principles to solve complex problems. With diverse experience across various industries, I strive to design solutions that combine aesthetics and functionality while staying true to a minimalist design philosophy.
+            Passionate about minimalist design, I create clear and intuitive interfaces for optimal user experiences.</p>
+        </section>
+
+        <section id="portfolio" class="section">
+            <h2>Portfolio</h2>
+            <div class="portfolio">
+                <div class="portfolio-item">
+                    <img src="images/converter.png" alt="Projet 1">
+                    <h3>Project 1</h3>
+                    <p>Currency & crypto converter.</p>
+                    <a href="convert.html" target="_blank">
+
+                <button style="margin: 10px; padding: 10px 20px; background: #333; color: #fff; border: none; border-radius: 5px; cursor: pointer;">
+                    View Details
+                </button>
+                
+            </a>
+
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/missalbinos.png" alt="Projet 2">
+                    <h3>Project 2</h3>
+                    <p>Website beauty contest</p>
+                    <a href="https://specialmissalbinos.com/" target="_blank">
+                <button style="margin: 10px; padding: 10px 20px; background: #333; color: #fff; border: none; border-radius: 5px; cursor: pointer;">
+                    View Details
+                </button>
+            </a>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/nomad.png" alt="Projet 3">
+                    <h3>Project 3</h3>
+                    <p>High Fidelity prototype website 1</p>
+                    <a href="https://www.figma.com/proto/ZyCL4iS3hR3SdVy7srPMTM/Nomad-sport?page-id=0%3A1&node-id=1-2&node-type=frame&viewport=400%2C90%2C0.16&t=prrojHvfqEM748PO-1&scaling=scale-down&content-scaling=fixed" target="_blank">
+                <button style="margin: 10px; padding: 10px 20px; background: #333; color: #fff; border: none; border-radius: 5px; cursor: pointer;">
+                    View Details
+                </button>
+            </a>
+                </div>
+                <div class="portfolio">
+                <div class="portfolio-item">
+                    <img src="images/missafrica.png" alt="Projet 4">
+                    <h3>Project 4</h3>
+                    <p>High Fidelity beauty contest website 2</p>
+                    <a href="https://www.figma.com/proto/VD02ViPYN9ajExo9lp6j8T/MissAfricaBelgium?page-id=60%3A151&node-id=60-152&node-type=canvas&viewport=547%2C355%2C0.1&t=PpTF2ShyE56zajeb-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=60%3A152" target="_blank">
+
+                <button style="margin: 10px; padding: 10px 20px; background: #333; color: #fff; border: none; border-radius: 5px; cursor: pointer;">
+                    View Details
+                </button>
+                
+            </a>
+
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/chicken.jpg" alt="Projet 5">
+                    <h3>Project 5</h3>
+                    <p>High Fidelity Chicken Africa website</p>
+                    <a href="https://www.figma.com/design/YRHlkUTe6n3VSw8TfiBSqo/Untitled?node-id=22-966&t=y41GqTX0bV81E9o3-1" target="_blank">
+                <button style="margin: 10px; padding: 10px 20px; background: #333; color: #fff; border: none; border-radius: 5px; cursor: pointer;">
+                    View Details
+                </button>
+            </a> 
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/taxiflash.png" alt="Projet 6">
+                    <h3>Project 6</h3>
+                    <p>High Fidelity taxi app.</p>
+                    <a href="https://www.figma.com/proto/4TY2a7DukHhpdXqx33j6va/taxi-flash-version-pour-app?page-id=0%3A1&node-id=1-145&node-type=canvas&viewport=1912%2C2113%2C1.16&t=bGm4Hvpdx20PnP0S-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A145" target="_blank">
+                <button style="margin: 10px; padding: 10px 20px; background: #333; color: #fff; border: none; border-radius: 5px; cursor: pointer;">
+                    View Details
+                </button>
+            </a>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/rootstock.png" alt="Projet 7">
+                    <h3>Project 7</h3>
+                    <p>High Fidelity website dog food.</p>
+                    <a href="https://www.figma.com/design/o3otcqv9hl5feuQTnLV4HL/Rootstock?node-id=0-1&t=EhRy02JgCxIZnNb6-1" target="_blank">
+                <button style="margin: 10px; padding: 10px 20px; background: #333; color: #fff; border: none; border-radius: 5px; cursor: pointer;">
+                    View Details
+                </button>
+            </a>
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="images/kudu.png" alt="Projet 8">
+                    <h3>Project 8</h3>
+                    <p>High Fidelity website.</p>
+                    <a href="https://www.figma.com/design/PWCXSOnzoa8jdbJsmEQRjg3N/Kudu-Home?node-id=0-1&t=RuXFhQB100fsIhb9-1" target="_blank">
+                <button style="margin: 10px; padding: 10px 20px; background: #333; color: #fff; border: none; border-radius: 5px; cursor: pointer;">
+                    View Details
+                </button>
+            </a>
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="images/substation.png" alt="Projet 9">
+                    <h3>Project 9</h3>
+                    <p>High Fidelity climbing website.</p>
+                    <a href="https://www.figma.com/design/3twimQ31a7M3fSFEAxdr9h/Substation?node-id=0-1&t=VuTfFluWzKoMS3X0-1" target="_blank">
+                <button style="margin: 10px; padding: 10px 20px; background: #333; color: #fff; border: none; border-radius: 5px; cursor: pointer;">
+                    View Details
+                </button>
+            </a>
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="images/ebike.png" alt="Projet 10">
+                    <h3>Project 10</h3>
+                    <p>High Fidelity bike website.</p>
+                    <a href="https://www.figma.com/design/tsld5Czt8O958eK7TyKUVP/EPIKE?node-id=0-1&t=DOLc04kyYoKhqP2X-1" target="_blank">
+                <button style="margin: 10px; padding: 10px 20px; background: #333; color: #fff; border: none; border-radius: 5px; cursor: pointer;">
+                    View Details
+                </button>
+            </a>
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="images/efactory.png" alt="Projet 11">
+                    <h3>Project 11</h3>
+                    <p>High Fidelity website.</p>
+                    <a href="https://www.figma.com/design/F8wmjtovF4MDXkOZ8vNahQ/eFactory-Foundation?node-id=0-1&t=cnriH7nUDuQYS0CN-1" target="_blank">
+                <button style="margin: 10px; padding: 10px 20px; background: #333; color: #fff; border: none; border-radius: 5px; cursor: pointer;">
+                    View Details
+                </button>
+            </a>
+                </div>
+<section id="about" class="section">
+            <h2>Étapes pour ménager une étude de cas UX</h2>
+    
+        </section>
+         <div class="portfolio-item">
+                    <img src="images/objectifs.png" alt="Step 1">
+                    <h3>Case Study beauty contest</h3>
+                    <p>Définition du Contexte et des Objectifs</p>
+                    <a href="https://docs.google.com/presentation/d/1EWpMRAK-X5qPsdZ6WfX2v_7b9H793oWn4ixxj6CVgzw/edit#slide=id.p1" target="_blank">
+                <button style="margin: 10px; padding: 10px 20px; background: #333; color: #fff; border: none; border-radius: 5px; cursor: pointer;">
+                    View Details
+                </button>
+            </a>
+                </div>
+<div class="portfolio-item">
+                    <img src="images/recherche.png" alt="Step 1">
+                    <h3>Case study Africa Chicken</h3>
+                    <p>Définition du Contexte et des Objectifs</p>
+                    <a href="https://docs.google.com/presentation/d/120QLUR6fbIij5FZUprpjKOs8W5Y2o3e_AUVKb_kDARU/edit" target="_blank">
+                <button style="margin: 10px; padding: 10px 20px; background: #333; color: #fff; border: none; border-radius: 5px; cursor: pointer;">
+                    View Details
+                </button>
+            </a>
+                </div>
+<div class="portfolio-item">
+                    <img src="images/analyse.png" alt="Step 1">
+                    <h3>Case study Taxi app</h3>
+                    <p>Définition du Contexte et des Objectifs</p>
+                    <a href="https://docs.google.com/presentation/d/11AzJOhMI3OShRau84Vr_p82l13Aj6OjxFEYWp0D-Ly0/edit?usp=sharing" target="_blank">
+                <button style="margin: 10px; padding: 10px 20px; background: #333; color: #fff; border: none; border-radius: 5px; cursor: pointer;">
+                    View Details
+                </button>
+            </a>
+                </div>
+
+
+            </div>
+        </section>
+
+       <section id="contact" class="section">
+    <h2>Contact</h2>
+    <form action="send_mail.php" method="POST">
+        <!-- Champ pour le nom -->
+        <div class="form-group">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <!-- Champ pour l'email -->
+        <div class="form-group">
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <!-- Champ pour le sujet -->
+        <div class="form-group">
+            <label for="subject">Sujet :</label>
+            <input type="text" id="subject" name="subject">
+        </div>
+
+        <!-- Champ pour le message -->
+        <div class="form-group">
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <!-- Bouton d'envoi -->
+        <div class="form-group">
+            <button type="submit">Envoyer</button>
+        </div>
+    </form>
+</section>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
